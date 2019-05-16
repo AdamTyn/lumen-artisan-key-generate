@@ -105,7 +105,7 @@ class KeyGenerateCommand extends Command
      */
     protected function keyReplacementPattern()
     {
-        $escaped = preg_quote('=' . $this->laravel['config']['app.key'], '/');
+        $escaped = preg_quote('=' . env('APP_KEY'), '/');
 
         return "/^APP_KEY{$escaped}/m";
     }
