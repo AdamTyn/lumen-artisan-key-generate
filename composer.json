@@ -1,6 +1,6 @@
 {
     "name": "adamtyn/lumen-artisan-key-generate",
-    "description": "移植Laravel的 `php artisan key:generate` [快速创建模型] 指令到Lumen",
+    "description": "移植Laravel的 `php artisan key:generate` [重置AppKey] 指令到Lumen",
     "type": "library",
     "license": "MIT",
     "authors": [
