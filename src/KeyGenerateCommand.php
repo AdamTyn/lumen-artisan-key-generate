@@ -24,7 +24,7 @@ class KeyGenerateCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Set the application key';
+    protected $description = '为 Lumen 应用生成 AppSecret';
 
     /**
      * Execute the console command.
@@ -123,9 +123,11 @@ class KeyGenerateCommand extends Command
         $temp = explode($divide, $path);
         $basePath = '';
         $count = count($temp);
+
         for ($i = 0; $i < $count - 4; ++$i) {
             $basePath .= ($temp[$i] . $divide);
         }
+
         return $basePath . '.env';
     }
 }
